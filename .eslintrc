@@ -1,0 +1,18 @@
+{
+  "extends": [
+    "standard"
+  ],
+  "rules": {
+    "comma-dangle": ["error", "always-multiline"],
+    "func-names": 0,
+    "prefer-arrow-callback": 0,
+    "no-var": 0
+  },
+ "globals": {
+    "jQuery": true,
+    "$": true
+  },
+  "parserOptions": {
+    "sourceType": "module",
+  }
+}
