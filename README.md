@@ -1,4 +1,4 @@
-# Whiteboard
+# PinkyBoard
 
 WIP
 
@@ -6,15 +6,15 @@ WIP
 
 Create Python3 virtual environment:
 
-    mkvirtualenv --python=/usr/bin/python3 whiteboard
+    mkvirtualenv --python=/usr/bin/python3 pinkyboard
 
 Get the source from GitHub:
 
-    git clone git@github.com:HBalija/whiteboard.git
+    git clone git@github.com:HBalija/pinkyboard.git
 
 Navigate to the project directory:
 
-    cd  whiteboard
+    cd  pinkyboard
 
 Instal requirements:
 
