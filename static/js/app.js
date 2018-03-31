@@ -30,6 +30,12 @@ document.querySelectorAll('input[type=range]').forEach(function (item) {
   item.addEventListener('change', changeColor)
 })
 
+document.querySelector('#addNewColor').addEventListener('click', function () {
+  var newColor = document.createElement('li')
+  newColor.style.backgroundColor = document.querySelector('#newColor').style.backgroundColor
+  document.querySelector('.controls ul').appendChild(newColor)
+})
+
 
 /*
 
@@ -56,5 +62,12 @@ function changeColor () {
 }
 
 $('input[type=range]').change(changeColor)
+
+$('#addNewColor').click(function () {
+  var $newColor = $('<li></li>')
+  $newColor.css('background-color', $('#newColor').css('background-color'))
+  $('.controls ul').append($newColor)
+  $newColor.click()
+})
 
 */
