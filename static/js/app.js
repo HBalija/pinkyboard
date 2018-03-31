@@ -1,17 +1,21 @@
 
 var color = document.querySelector('.selected').style.backgroundColor
-var controls = document.querySelectorAll('.controls li')
+var lis = document.querySelectorAll('li')
 var revealColorSelect = document.querySelector('#revealColorSelect')
 
-controls.forEach(function (item) {
-  item.addEventListener('click', function (event) {
-    for (var i = 0; i < controls.length; i += 1) {
-      controls[i].classList.remove('selected')
-    }
-    event.target.className += ' selected'
-    color = event.target.style.backgroundColor
+function setSelected (selector) {
+  selector.forEach(function (item) {
+    item.addEventListener('click', function (event) {
+      for (var i = 0; i < controls.length; i += 1) {
+        controls[i].classList.remove('selected')
+      }
+      event.target.className += ' selected'
+      color = event.target.style.backgroundColor
+    })
   })
-})
+}
+
+setSelected(lis)
 
 revealColorSelect.addEventListener('click', function () {
   changeColor()
@@ -34,6 +38,8 @@ document.querySelector('#addNewColor').addEventListener('click', function () {
   var newColor = document.createElement('li')
   newColor.style.backgroundColor = document.querySelector('#newColor').style.backgroundColor
   document.querySelector('.controls ul').appendChild(newColor)
+  lis = document.querySelectorAll('li')
+  setSelected(lis)
 })
 
 
@@ -43,7 +49,7 @@ jQuery code
 
 var color = $('.selected').css('background-color')
 
-$('.controls li').click(function () {
+$('.controls').on('click', 'li', function () {
   $(this).siblings().removeClass('selected')
   $(this).addClass('selected')
   color = $(this).css('background-color')
