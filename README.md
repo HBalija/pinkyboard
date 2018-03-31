@@ -1,7 +1,5 @@
 # PinkyBoard
 
-WIP
-
 ### Quickstart
 
 Create Python3 virtual environment:
