@@ -45,6 +45,8 @@ $canvas.mousedown(function (e) {
   }
 }).mouseup(function () {
   mouseDown = false
+}).mouseleave(function () {
+  $canvas.mouseup()
 })
 
 
@@ -102,7 +104,6 @@ document.querySelector('#addNewColor').addEventListener('click', function () {
 })
 
 canvas.addEventListener('mousedown', function (e) {
-  console.log(e)
   lastEvent = e
   mouseDown = true
 })
@@ -119,6 +120,10 @@ canvas.addEventListener('mousemove', function (e) {
 })
 
 canvas.addEventListener('mouseup', function () {
+  mouseDown = false
+})
+
+canvas.addEventListener('mouseleave', function () {
   mouseDown = false
 })
 
