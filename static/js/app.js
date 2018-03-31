@@ -3,6 +3,9 @@ var color = document.querySelector('.selected').style.backgroundColor
 var lis = document.querySelectorAll('li')
 var revealColorSelect = document.querySelector('#revealColorSelect')
 
+// selecting first canvas html element
+var ctx = document.querySelector('canvas').getContext('2d')
+
 function setSelected (selector) {
   selector.forEach(function (item) {
     item.addEventListener('click', function (event) {
@@ -48,6 +51,7 @@ document.querySelector('#addNewColor').addEventListener('click', function () {
 jQuery code
 
 var color = $('.selected').css('background-color')
+var ctx = $('canvas')[0].getContext('2d')
 
 $('.controls').on('click', 'li', function () {
   $(this).siblings().removeClass('selected')
@@ -77,3 +81,11 @@ $('#addNewColor').click(function () {
 })
 
 */
+
+ctx.beginPath()
+ctx.moveTo(10, 10)
+ctx.lineTo(20, 10)
+ctx.lineTo(20, 20)
+ctx.lineTo(10, 20)
+ctx.closePath()
+ctx.stroke()
