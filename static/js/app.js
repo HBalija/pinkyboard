@@ -6,8 +6,8 @@ var revealColorSelect = document.querySelector('#revealColorSelect')
 function setSelected (selector) {
   selector.forEach(function (item) {
     item.addEventListener('click', function (event) {
-      for (var i = 0; i < controls.length; i += 1) {
-        controls[i].classList.remove('selected')
+      for (var i = 0; i < lis.length; i += 1) {
+        lis[i].classList.remove('selected')
       }
       event.target.className += ' selected'
       color = event.target.style.backgroundColor
