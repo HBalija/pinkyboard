@@ -1,9 +1,5 @@
-html {
-	background-color: #000;
-}
-
 body {
-	padding-top: 20px;
+	padding: 10px 0 72px;
  	background-image: linear-gradient(#c980b5, #000);
 	font-family: sans-serif;
 }
