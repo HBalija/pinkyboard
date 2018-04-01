@@ -1,6 +1,7 @@
 body {
-	background: #f46bbbeb;
+	background-image: linear-gradient(#c980b5, #000);
 	font-family: sans-serif;
+	background-color: #000;
 }
 
 canvas {
@@ -31,9 +32,9 @@ ul {
 
 ul li, #newColor {
 	display:block;
-	height: 54px;
-	width: 54px;
-	border-radius: 60px;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
 	cursor: pointer;
 	border: 0;
 	box-shadow: 0 3px 0 0 #222;
@@ -57,14 +58,13 @@ ul li {
 }
 
 .selected {
-	border: 2px solid #b266ff;
-	width: 54px;
-	height: 54px;
+	border: 2px solid #bd8eae;
+	width: 45px;
+	height: 45px;
 }
 button {
-	background: #b266ff;
-	box-shadow: 0 3px 0 0 #6A845F;
-	color: #fff;
+	background: #272627;
+	color: #bd8eae;
 	outline: none;
 	cursor: pointer;
 	text-shadow: 0 1px #6A845F;
