@@ -1,5 +1,5 @@
 body {
-	background: #fbc7ff;
+	background: #f46bbbeb;
 	font-family: sans-serif;
 }
 
@@ -57,7 +57,7 @@ ul li {
 }
 
 .selected {
-	border: 2px solid #fff;
+	border: 2px solid #b266ff;
 	width: 54px;
 	height: 54px;
 }
