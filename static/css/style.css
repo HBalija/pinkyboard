@@ -1,13 +1,17 @@
-body {
-	background-image: linear-gradient(#c980b5, #000);
-	font-family: sans-serif;
+html {
 	background-color: #000;
+}
+
+body {
+	padding-top: 20px;
+ 	background-image: linear-gradient(#c980b5, #000);
+	font-family: sans-serif;
 }
 
 canvas {
 	background: #fff;
 	display: block;
-	margin: 50px auto 10px;
+	margin: 0px auto 10px;
 	border-radius: 5px;
 	box-shadow: 0 4px 0 0 #222;
 	cursor: url(../img/cursor.png), crosshair;
